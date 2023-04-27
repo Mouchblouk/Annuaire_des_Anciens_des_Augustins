@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang = "fr">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Inscription</title>
+   <link rel="stylesheet" href="../css/index.css">
+   <script src="../js/pages.js"></script>
+   <link rel="icon" type="image/x-icon" href="../images/logo_des_anciens.ico">
+</head>
+<body id="background" onload="signupanim()">
+   <!--AJOUTEZ CE HEADER à CHAQUE PAGE-->
+   <header>
+      <img id="logo" src="../images/logo_des_anciens.jpg" alt = "logo">
+      <h1>Annuaire des Augustins</h1>
+      <a href="../index.html" id="un">Informations</a>
+      <a href="inscription.html" id="deux">S'Inscrire</a>
+      <a href="recherche.html" id="trois">Annuaire</a> <!--example: ./pages/annuaire.html-->
+   </header>
+
+
+   <!--DEBUT DU CONTENU:-->
+
+   <!--DIV d'inscription-->
+   <div id="signup">
+      <h1>Inscription</h1>
+      <form action="javascript:inscription()" method="post" id="inscription">
+		   <label>Nom</label>
+         <input type="text" id="nom" value="" class="input" required />
+         <label>Prénom</label>
+         <input type="text" id="prenom" value="" class="input" required />
+         <label>Année d'obtention du Bac</label>
+         <input type="number" min="1900" max="2050" step="1" value="2023" id="annee_bac" class="input" required />
+         <label>Adresse Mail</label>
+         <input type="email" id="email" value="" class="input" required />
+		   <input id="btn-post" type="submit" value="S'inscrire" class="button">	
+      </form>
+   </div>   
+
+   <!--Statut:-->
+   <div id="resultat" class=""></div>
+</body>
+</html>

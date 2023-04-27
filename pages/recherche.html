@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Recherche</title>
+   <link rel="stylesheet" href="../css/index.css">
+   <script src="../js/search.js"></script>
+   <link rel="icon" type="image/x-icon" href="../images/logo_des_anciens.ico">
+</head>
+<body id="recherche" onload="search()">
+   <!--AJOUTEZ CE HEADER à CHAQUE PAGE-->
+   <header>
+      <img id="logo" src="../images/logo_des_anciens.jpg" alt="logo">
+      <h1>Annuaire des Augustins</h1>
+      <a href="../index.html" id="un">Informations</a>
+      <a href="inscription.html" id="deux">S'Inscrire</a>
+      <a href="recherche.html" id="trois">Annuaire</a> <!--example: ./pages/annuaire.html-->
+   </header>
+
+
+   <!--DEBUT DU CONTENU:-->
+   <div id="search">
+      <h1>Recherche (laissez vide pour tout voir)</h1>
+      <form action="javascript:search()" method="post" id="inscription">
+         <div class="formelm">
+   	      <label>Nom</label>
+            <input type="text" id="nom" value="" >
+         </div>
+         <div class="formelm">
+            <label>Prénom</label>
+            <input type="text" id="prenom" value="" >
+         </div>
+         <div class="formelm">
+            <label>Année du Bac</label>
+            <input type="number" min="1900" max="2050" step="1" value="" id="annee_bac">
+         </div>
+         <div class="formelm">
+            <label>Adresse Mail</label>
+            <input type="email" id="email" value="">
+         </div>
+         <input class=button id="btn-post" type="submit" value="Rechercher">
+      </form>
+   </div>   
+
+
+   <div id="search">
+      <h1>Résultat</h1>
+      <!--Cette DIV est remplie par du JS-->
+      <div id="resultat">
+         
+      </div>
+   </div>
+</body>
+</html>

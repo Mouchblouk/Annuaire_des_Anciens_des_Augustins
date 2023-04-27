@@ -1,0 +1,311 @@
+/*GLOBAL */
+
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  margin-bottom: 3%;
+}
+
+#background {
+  background-image: url("../images/test-modified.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#recherche{
+  background-color: rgb(105, 144, 228);
+}
+
+/* \/ STYLES POUR HEADER (SUR CHAQUE PAGE) \/ */
+header {  /*Cree une grille pour faire l'entete de la page*/
+    background-color: rgb(65, 118, 233);
+    width:auto;
+    display: grid;
+    grid-template-columns: 7.5% 30.5% 30.5% 30.5%;
+    grid-template-rows: 90px 50px;
+    margin-bottom:2%
+}
+#logo { /*Logo(img), taille ajustée auto*/
+    width: 85%;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    grid-column: 1;
+    grid-row: 1/4;
+}
+header a { /* Liens du menu*/
+  color: white;
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+  margin-left: 1%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  border-top: 3px solid white;
+  font-size: 130%;
+}
+header #un{
+  grid-row: 2;
+  grid-column: 2;
+}
+
+header #deux{
+  grid-row: 2;
+  grid-column: 3;
+}
+
+header #trois{
+  grid-row: 2;
+  grid-column: 4;
+}
+
+header a:hover { /* change la couleur avec survol de la souris*/
+  background-color: rgb(105, 144, 228);
+  transition: all 0.3s ease-in-out;
+  border-top: 3px solid blue;
+}  
+header h1 { /* Titre de la page*/
+  color:white;
+  grid-row: 1;
+  grid-column: 2/5;
+  align-self: center;
+  text-align: center;
+  font-size: 400%;
+}
+/* ^ STYLES POUR HEADER (SUR CHAQUE PAGE) ^ */
+
+
+/*STYLES INFOS*/
+.titre{
+  text-align: center;
+  font-size: 230%;
+  color:white;
+  border-bottom: 3px solid white;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+p{
+  font-size: 125%;
+  margin-left:5%;
+  color:white;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin : 0 auto;
+  text-align: center;
+}
+
+.article a{
+  font-size: 125%;
+  margin-left:5%;
+  color:white;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 5%;
+  display: block;
+  text-align: center;
+  text-decoration: solid underline;
+  color: blue;
+}
+
+.article{
+  overflow: hidden;
+  display: table;
+}
+
+.articlephoto{
+  float:left;
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin:1%;
+  display: table-cell;
+}
+
+/*STYLES POUR FORMS (notamment inscription)*/
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid white;
+  border-radius: 5px;
+  background-color: rgb(65, 118, 233);
+  color: white;
+  font-size: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus{
+  background-color: rgb(105, 144, 228);
+  border: 3px solid blue;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+label{
+  font-size: 110%;
+  margin-left:5%;
+  color:white;
+  text-align: center;
+  margin-left: 10%;
+}
+
+#signup{
+  border-radius: 25px;
+  background-color: rgb(65, 118, 233);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  padding-left:15px;
+  padding-right: 15px;
+  padding-top:none;
+  padding-bottom: 15px;
+  width: 35%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+#signup h1{
+  padding-bottom: 3%;
+  padding-top: 3%;
+  text-align: center;
+  font-size: 230%;
+  color:white;
+  border-bottom: 3px solid white;
+}
+
+#signup .input{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
+#signup .button{
+  border: none;
+  color: rgb(105, 144, 228);
+  background-color: white;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  font-size: 110%;
+}
+
+#signup .button:hover{
+  background-color: rgb(105, 144, 228);
+  color:white;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/*STYLES POUR RECHERCHE*/
+#search{
+  border-radius: 25px;
+  background-color: rgb(65, 118, 233);
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+  padding-left:15px;
+  padding-right: 15px;
+  padding-top:none;
+  padding-bottom: 0.75%;
+}
+
+#inscription{
+  overflow: hidden;
+}
+
+#search h1{
+  padding-bottom: 0.25%;
+  padding-top: 1%;
+  text-align: center;
+  font-size: 230%;
+  color:white;
+  border-bottom: 3px solid white;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search label,input{
+  display:block;
+  margin-top: 0;
+}
+
+#search label{
+  text-align: left;
+  margin-left: 0;
+}
+
+#search .formelm{
+  float:left;
+  margin:1%;
+  margin-top: 0;
+
+}
+
+#search .button{
+  border: none;
+  color: rgb(105, 144, 228);
+  background-color: white;
+  padding: 16px 32px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  align-self: center;
+  margin-top: 14px;
+  float: right;
+  transition: all 0.5s ease-in-out;
+  font-size: 110%;
+}
+
+#search .button:hover{
+  background-color: rgb(105, 144, 228);
+  color:white;
+  transition: all 0.5s ease-in-out;
+}
+
+/*STYLES STATUT/RéSULTAT*/
+#resultat {
+  display: block;
+  text-align: center;
+  color: white;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 0;
+  padding-left:15px;
+  padding-right: 15px;
+  padding-top:none;
+  padding-bottom: 0.75%;
+  font-size: 110%;
+}
+
+table{
+  border:5px solid white;
+  border-collapse: collapse;
+  width:100%;
+}
+
+th{
+  border: 5px solid white;
+}
+
+td{
+  border-bottom:3px solid white !important;
+  border: 1px solid white;
+}
