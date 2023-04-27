@@ -1,0 +1,2 @@
+# Annuaire_des_Anciens_des_Augustins
+Ce projet des trophées NSI est un annuaire des membres de l’association des anciens élèves de notre lycée : Les Anciens Des Augustins. Il permet de gérer et de consulter une base de données de l’ensemble des adhérents en ligne sur un site internet.
